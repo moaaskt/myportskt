@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="imgs/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon-16x16.png">
+<link rel="manifest" href="imgs/favicon-16x16.png">
+    <title>Portfolio Skate</title>
+</head>
+<body>
+
+
+
+    <div class="background-image"></div>
+
+    <header>
+        <h1>A Cronologia do Meu Skate</h1>
+        <nav>
+            <ul>
+                <li><a href="sobre.html">Sobre Mim</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="eventos">
+        <h2>Proximos Eventos:</h2>
+
+        <h1>Em Breve</h1>
+        
+    </section>
+    
+    
+    <section id="eventos">
+        <h2>Eventos de Skate</h2>
+        <div class="galeria">
+            <img src="imgs/avs1.jpg" alt="Evento 1" onclick="irParaEvento('evento1')" >
+            <img src="imgs/campavs2.jpg" alt="Evento 2" onclick="irParaEvento('evento2')">
+            <img src="imgs/capgo.jpg" alt="Evento 3" onclick="irParaEvento('evento3')">
+            <img src="imgs/skateclub.jpg" alt="Evento 4" onclick="irParaEvento('evento4')">
+            <img src="imgs/mag1.png" alt="Evento 7" onclick="irParaEvento('evento7')">
+            <img src="imgs/camp mari.jpg" alt="Evento 5" onclick="irParaEvento('evento5')">
+            <img src="imgs/de ajudar quem precisa.png" alt="Evento 6" onclick="irParaEvento('evento6')">
+            <!-- Continue adicionando o atributo onclick para as outras imagens -->
+        </div>
+    </section>
+    
+    <section id="videos-eventos">
+        <h2>Vídeos dos Eventos</h2>
+        <div class="videos">
+            <div class="video-evento">
+                <video controls>
+                    <source src="imgs/campeonato 2014  AVS.mp4" type="video/mp4">
+                    Seu navegador não suporta o vídeo.
+                </video>
+                <p>Descrição do Vídeo 1: [Insira uma breve descrição sobre o vídeo, como local, data e destaque.]</p>
+            </div>
+            <div class="video-evento">
+                <video controls>
+                    <source src="imgs/campeonato 2014  AVS.mp4" type="video/mp4">
+                    Seu navegador não suporta o vídeo.
+                </video>
+                <p>Descrição do Vídeo 2: [Insira uma breve descrição sobre o vídeo, como local, data e destaque.]</p>
+            </div>
+            <!-- Adicione mais vídeos conforme necessário -->
+        </div>
+    </section>
+
+
+    <footer id="contato">
+        <p> <a href="https://www.instagram.com/moa.skt/" target="_blank"><lord-icon
+            src="https://cdn.lordicon.com/ewswvzmw.json"
+            trigger="hover"
+            colors="primary:#c71f16,secondary:#ffffff"
+            style="width:35px;height:35x">
+        </lord-icon></a>  <a href="https://www.facebook.com/moa.skt/" target="_blank"><lord-icon
+            src="https://cdn.lordicon.com/iqagrlso.json"
+            trigger="hover"
+            colors="primary:#c71f16,secondary:#ffffff"
+            style="width:35px;height:35px">
+        </lord-icon></a>  <a href="https://www.facebook.com/AVSGV/" target="_blank"><lord-icon
+            src="https://cdn.lordicon.com/rahouxil.json"
+            trigger="hover"
+            colors="primary:#c71f16,secondary:#ffffff"
+            style="width:30px;height:30px">
+        </lord-icon></a></p>
+    </footer>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+    <script>
+function irParaEvento(eventoId) {
+    window.location.href = `eventos.html#${eventoId}`;
+}
+    </script>
+</body>
+</html>
