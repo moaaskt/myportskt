@@ -7,6 +7,9 @@ body {
     line-height: 1.6;
     
 }
+html{
+  
+}
 header {
     background-color: #1f1f1f;
     color: #ffffff;
@@ -107,8 +110,10 @@ section h2 {
     }
   
     #eventos .galeria img {
-      width: 100%; /* Cada imagem ocupará 100% da largura da tela */
+      width: 88%; /* Cada imagem ocupará 100% da largura da tela */
       margin-bottom: 20px; /* Espaço entre as imagens */
+      padding: 22px;
+      
     }
   }
 .videos {
@@ -135,8 +140,8 @@ footer {
     background-color: #1f1f1f;
     color: #ffffff;
     text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
+    width: 100%;
+    padding: 10px 0;
     border-top: 2px solid #ff4500;
 }
 
@@ -150,6 +155,7 @@ footer a:hover {
     text-decoration: underline;
 }
 .minhas-fotos {
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -158,7 +164,7 @@ footer a:hover {
 }
 
 .minhas-fotos img {
-    width: 30%;
+    width: 50%;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
@@ -166,8 +172,28 @@ footer a:hover {
 .minhas-fotos img:hover {
     transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+    .minhas-fotos   { 
+    
+        width: 100%; /* Ajusta a largura conforme necessário */
+        margin: 0 auto; /* Centraliza o carrossel */
+    }
+}
+@media (max-width: 768px) {
+    .minhas-fotos img  { 
+    
+        width: 100%; /* Ajusta as imagens para preencher o carrossel */
+        height: auto; /* Mantém a proporção das imagens */
+        display: block; /* Remove o espaço em branco abaixo das imagens */
+    }
+}
+
+
+
+
+
 #formulario-contato {
-    width: 100%;
     max-width: 600px;
     margin: 40px auto;
     padding: 40px;
@@ -232,30 +258,20 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
     background-color: #e03e00;
 }
+@media (max-width: 768px) {
+    input[type="text"], input[type="email"], textarea {
+        width: 90%; /* Reduz a largura das inputs no mobile */
+        padding: 10px; /* Reduz o padding */
+        font-size: 14px; /* Ajusta o tamanho da fonte */
+    }
 
+    /* Garantindo que o formulário não ocupe a tela toda */
+    form {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
 /* Rodapé */
-footer {
-    background-color: #1f1f1f;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-    border-top: 2px solid #ff4500;
-}
-
-footer p {
-    margin: 0;
-}
-
-footer a {
-    color: #ff4500;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
 
 
 /* Estilos para a galeria de eventos */
@@ -306,6 +322,21 @@ footer a:hover {
     font-size: 1em;
     color: #666;
 }
+@media (max-width: 768px) {
+    .event .descricao  {
+        font-size: 11px;
+        padding: 30px;
+    }
+}
+@media (max-width: 768px) {
+    .event  {
+        font-size: 14px;
+        padding: 1px;
+    }
+}
+
+
+   
 
 .event a {
     color: #007bff;
@@ -343,6 +374,7 @@ footer a:hover {
     font-size: 1em;
     line-height: 1.4;
 }
+
 /* Estilos específicos para o carrossel */
 /* Estilos para o carrossel */
 .carrossel {
@@ -418,18 +450,14 @@ footer a:hover {
     max-width: 800px; /* Ajuste a largura máxima conforme necessário */
     margin: 0 auto;
 }
-
-.background-image {
-    background-image: url('sua-imagem-grande.jpg'); /* Substitua pelo caminho da sua imagem */
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+@media (max-width: 768px) {
+    .eventos-descricao {
+        font-size: 14px;
+        padding: 10px;
+    }
 }
+
+
 
 lord-icon {
     margin: 0 3px;

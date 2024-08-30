@@ -37,7 +37,7 @@
             
             Além de andar de skate, percebi que minha missão era fazer algo maior pelo esporte. A cada campeonato que organizei, e a cada campanha que promovi nas escolas, minha motivação sempre foi a mesma: lutar pelo skate e pela sua comunidade. Esse é o meu legado, e continuo a fazer o possível para que o skate siga em frente.</p>
         <div class="minhas-fotos">
-            <img src="https://i.ibb.co/DkNLhXB/eucamp.jpg" alt="Foto no skate">
+            
             <img src="https://i.ibb.co/gFfZ7TS/euu32.jpg" alt="Competição de skate">
             <img src="https://i.ibb.co/P94z3HC/eu2.jpg" alt="Evento de skate">
             
@@ -47,5 +47,24 @@
     <footer>
         <p>&copy; 2024 Meu Portfólio de Skate</p>
     </footer>
+    <!-- Inclua jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Inclua o Slick Carousel -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.minhas-fotos').slick({
+            dots: true, // Exibe pontos de navegação
+            infinite: true, // Permite rolar infinitamente
+            speed: 500, // Velocidade de transição
+            slidesToShow: 1, // Exibe um slide por vez
+            slidesToScroll: 1 // Desloca um slide por vez
+        });
+    });
+</script>
+
 </body>
 </html>
